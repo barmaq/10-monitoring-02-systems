@@ -127,7 +127,7 @@ KAPACITOR_TAG=latest
       - ./kapacitor/data/:/var/lib/kapacitor:Z  
   
 **Ответ.**
-- ![Скриншот 7](./images/8.png)
+- ![Скриншот 7](./images/7.png)
 
 #
 8. Перейдите в веб-интерфейс Chronograf (http://localhost:8888) и откройте вкладку Data explorer.
