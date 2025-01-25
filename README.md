@@ -110,24 +110,24 @@ P.S.: если при запуске некоторые контейнеры б�
 
 **Ответ.**
 
-пришлось внести изменения из пункта 8 и дополнительно сделать
-sudo chmod -R 777 ./chronograf/data/
-sudo chmod -R 777 ./telegraf/
-sudo chmod -R 777 ./documentation/
+пришлось внести изменения из пункта 8 и дополнительно сделать  
+sudo chmod -R 777 ./chronograf/data/  
+sudo chmod -R 777 ./telegraf/  
+sudo chmod -R 777 ./documentation/  
 
-в env заменил
-TELEGRAF_TAG=latest
-INFLUXDB_TAG=1.8
-CHRONOGRAF_TAG=latest
-KAPACITOR_TAG=latest
-
-добавляем :Z для систем с SElinux
-    volumes:
-      # Mount for kapacitor data directory
-      - ./kapacitor/data/:/var/lib/kapacitor:Z
-
+в env заменил  
+TELEGRAF_TAG=latest  
+INFLUXDB_TAG=1.8  
+CHRONOGRAF_TAG=latest  
+KAPACITOR_TAG=latest  
+  
+добавляем :Z для систем с SElinux  
+    volumes:  
+      # Mount for kapacitor data directory  
+      - ./kapacitor/data/:/var/lib/kapacitor:Z  
+  
 **Ответ.**
-- [Скриншот 7](./images/8.png)
+- ![Скриншот 7](./images/8.png)
 
 #
 8. Перейдите в веб-интерфейс Chronograf (http://localhost:8888) и откройте вкладку Data explorer.
@@ -140,7 +140,7 @@ KAPACITOR_TAG=latest
 Для выполнения задания приведите скриншот с отображением метрик утилизации cpu из веб-интерфейса.
 
 **Ответ.**
-- [Скриншот 8](./images/8.png)
+- ![Скриншот 8](./images/8.png)
 
 #
 9. Изучите список [telegraf inputs](https://github.com/influxdata/telegraf/tree/master/plugins/inputs). 
@@ -173,7 +173,7 @@ KAPACITOR_TAG=latest
 Факультативно можете изучить какие метрики собирает telegraf после выполнения данного задания.
 
 **Ответ.**
-- [Скриншот 9 ](./images/9.png)
+- ![Скриншот 9 ](./images/9.png)
 
 
 ### Как оформить ДЗ?
